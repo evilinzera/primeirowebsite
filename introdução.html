@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Primeiro Website /Evilin Wust da silva </title>
+    <link rel="stylesheet" type="text/css"  href="indexx.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" >Logo</a>
+<ul>
+            <li><a href="#"class="active">Inicio</a></li>
+            <li><a href="#">Meio</a></li>
+            <li><a href="#">trabalho</a></li>
+            <li><a href="#">contato</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/2833951.jpg" id="stars">
+        <img src="img/lua.jpg" id="lua">
+        <img src="img/15Z_2102.w026.n002.163B.p1.163.jpg" id="montanha">  
+        <h2 id="text">Evilin Wust</h2>
+        <a href="#sec" id="btn" >Explore</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2>Sejam Bem Vindos</h2>
+        <p>&diams; Desenvolver full stack em formação , conhecimento em criação de sites e muito mais .
+
+            Dedico meu tempo livre criando sites por entretenimento sobre temas variados adquirindo cada vez mais experiência no ramo de tecnologia .
+            
+            Procuro nessa minha passagem agregar o máximo de experiências para contribuir em atividades de diferentes áreas e me tornar uma profissional cada vez melhor
+            Venho apresentar um pouco do meu trabalho , este é o primeiro site que crio na intenção de que possam ver meu crescimento ao longo de cada projeto meu.</p>
+
+
+    </div>
+    <script>
+        let stars= document.getElementById("stars");
+        let lua=Document.getElementById("lua");
+        let montanha=document.getElementById("montanha");
+        let text=Document.getElementById("text");
+        let bnt=document.getElementById("bnt");
+let header = document.querySelector("header");
+
+        window.addEventListener("scroll", function (){
+            let value = window.scrollY;
+            stars.style.left =value *0.25 + "px";
+            lua.style.top= value *1.05 + "px";
+            montanha.style.top= value *0.05 + "px";
+            text.style.marginTop= value *1.5 +"px";
+            bnt.style.margintop = value *1.5+"px"
+            header.style.top= value *0.5 + "px"
+        })
+    </script>
+</body>
+</html>
